@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        .checkboxleft{
+            float: left;
+            margin-left:1%;
+        }
+
+        hr.daviddotted {
+           border-top: 1px dashed #8c8b8b;
+           display: block;
+           height: 1px;
+           width:auto ;
+        }
+
+        hr {
+            display: block;
+            height: 1px;
+            border-top: 1px solid #ccc;
+            width:auto ;
+        }
+
+        .disclaimertext{
+            word-wrap: break-word;
+        }
+
+        h5.david{
+            margin-top:5%;
+        }
+
+        .david_org_picture_frame{
+            height: 200px;
+            width: 200px;
+            border-style:solid;
+            border-width:1px;
+            border-color:rgb(0,0,0);
+        }
+
+        textarea.davidtextarea{
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 200px;
+            max-height: 250px;
+            overflow-y: scroll;
+        }
+    </style>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#david_orgpic')
+                        .attr('src', e.target.result)
+                        .width(150)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+
+    <head>
+        <title>Bootstrap 101 Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+
+   <body>
+       <div class="container-fluid">
+           <div class="col-lg-2"></div>
+
+           <div class="col-lg-8">
+               <h1>Organization Registration</h1>
+               <h6>Recruit volunteers for project</h6>
+               <hr/>
+
+               <ul class="nav nav-tabs">
+                   <li class="disabled"><a href="#">Register Organization Part 1</a></li>
+                   <li class="active"><a data-toggle="tab" href="#part2">Register Organization Part 2</a></li>
+               </ul>
+
+               <h5 class='david'>Organization Profile</h5>
+
+               <div id="part2" class="tab-pane fade in active">
+
+                   <form action="#blank" method='post'>
+                       <div class="form-group row">
+                           <div class="col-lg-4">
+                               <label for="org_photo">Organization Photo</label>
+
+                               <div class="david_org_picture_frame">
+                                   <img id="david_orgpic" src="#" alt="" />
+                               </div>
+                               <input type='file' id="david_orgpic" onchange="readURL(this);" />
+                           </div>
+
+                           <div class="col-lg-8">
+                               <label for="org_number">About Us</label>
+                               <textarea placeholder="Organization Registration Number" class="form-control davidtextarea" id="david_orgabout"></textarea>
+
+                           </div>
+                       </div>
+
+                       <hr class="daviddotted">
+
+                       <div class="form-group row">
+                           <div class="col-lg-6">
+                               <label for="org_username">Name</label>
+                               <input type="text" placeholder="User's name" class="form-control" id="david_orgun" required>
+                           </div>
+                           <div class="col-lg-6">
+                               <label for="org_userphonenumber">Phone Number</label>
+                               <input type="text" placeholder="User's Phone Number" class="form-control" id="david_orgupn" required>
+                           </div>
+                       </div>
+
+                       <div class="form-group row">
+                           <div class="col-lg-6">
+                               <label for="org_useremail">Email</label>
+                               <input type="text" placeholder="User's Email" class="form-control" id="david_orgsuemail" required>
+                           </div>
+                       </div>
+
+
+                       <div class="col-lg-12 text-right">
+                           <input type="button" value="Back" class="btn btn-primary btn-md" onclick="goBack()">
+                           <input type="submit" value="Register" class="btn btn-primary btn-md">
+                       </div>
+                   </form>
+               </div>
+
+
+           </div>
+
+           <div class="col-lg-2"></div>
+
+
+
+
+       </div>
+   </body>
+</html>
