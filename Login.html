@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       hr.daviddotted {
+           border-top: 1px dashed #8c8b8b;
+           display: block;
+           height: 1px;
+           width:auto ;
+        }
+        
+        .disclaimertext{
+            word-wrap: break-word;
+        }
+        p.right{
+            margin-top:8%;
+            text-align:right;
+        }
+    </style>
+    
+    
+    <script>
+        function registeration() {
+            location.href = "Register.html";
+        } 
+           
+    </script>
+    
+    
+    <head>
+        <title>Bootstrap 101 Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   
+   <body>
+       <div class="container-fluid">
+           
+           <div class="row">
+               <div class="col-lg-4"></div>
+               
+               <div class="col-lg-4"><img src="abc.jpg" class="img-responsive"></div>
+               
+               <div class="col-lg-4"></div>
+               
+           </div>
+           
+           
+           
+           <div class="row">
+               <div class="col-lg-4"></div>
+               
+               <div class="col-lg-4"> 
+                   <form action='Register.php' method='post'>
+                       <div class="form-group row">
+                           <div class="col-lg-12">
+                               <label for="username">Username or E-mail Address</label>
+                               <input type="text" placeholder="WhiteFoxVolunteer" class="form-control" id="david_un" required>
+                           </div>
+                       </div>
+                       
+                       <div class="form-group row">
+                           <div class="col-lg-12">
+                               <label for="password">Password</label>
+                               <input type='password' placeholder="Minimum 8 characters with combination of alphabets, numbers, and symbols"class="form-control" id="david_pw" required>
+                           </div>
+                       </div>
+               
+                      <hr class='daviddotted'/>
+                       
+                       <div class="col-lg text-center">
+                           <input type="submit" value="Register" class="btn btn-primary btn-block">
+                       </div>
+                   </form>
+               </div>
+               
+               <div class="col-lg-4"></div>
+           
+           </div>
+           
+           <div class="row">
+               <div class="col-lg-4"></div>
+               
+               <div class="col-lg-4">
+                   <p class='right'><a href="Registration.html">Registration</a> | <a href="Registration.html">Forgot Password?</a></p>
+               </div>
+               
+               <div class="col-lg-4"></div>
+               
+           </div>
+       </div>
+   </body>
+</html>
