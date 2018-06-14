@@ -1,3 +1,63 @@
-.temp {
-    color= red;
+#loginWindow{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+}
+#loginWindow .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+
+.nav-background {
+    padding-top: 32px;
+}
+
+.dark-footer {
+    
+}
+
+.row-margin {
+    margin-bottom: 60px;
+}
+
+.carousel {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.image-limit {
+    max-width: 100%;
+}
+
+.header-top {
+    margin-top: 0;
 }
