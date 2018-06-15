@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footlinks" style="display:inline; list-style: none;">
+            <li class="footlink">About
+              <ul class="about" style="display:outline;list-style: none;">
+			  <li><a href="#">about</a></li>
+			  <li><a href="#">something</a></li>
+			  <li><a href="#">another thing</a></li>
+			  <li><a href="#">privacy</a></li>
+			  </ul>
+            </li>
+            <li class="footlink">Contact
+              <ul class="about" style="display:outline;list-style: none;">
+			  <li><a href="#">112, Uranus Road, Saturn Avenue laltitude 1001, Solar System</a></li>
+			  <li><a href="#">earth@milky_way.com</a></li>
+			  </ul>
+            </li>
+            <li class="footlink">Donations
+              <ul class="about" style="display:outline;list-style: none;">
+			  <li><a href="#">Channel</a></li>
+			  <li><a href="#">Saturn Bank</a></li>
+			  <li><a href="#">How to donate</a></li>
+			  </ul>
+            </li>
+          </ul>
+      </div>
+    </footer>
+  </body>
+</html>
